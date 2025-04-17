@@ -14,14 +14,23 @@
 //   },
 // };
 
+// const obj = {
+//   name: "Alice",
+//   printName: function () {
+//     //   printName() {
+//     setTimeout(function () {
+//       console.log(this.name);
+//     }, 1000);
+//   },
+// };
+
+// obj.printName();
+
 const obj = {
   name: "Alice",
   printName: function () {
-    //   printName() {
-    setTimeout(function () {
+    setTimeout(() => {
       console.log(this.name);
     }, 1000);
   },
 };
-
-obj.printName();
